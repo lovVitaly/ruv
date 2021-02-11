@@ -27,23 +27,51 @@
     </button>
     <div v-if="isNavOpen"
       class="sm:hidden text-lg text-blue-50 absolute z-10 bg-blue-500 border border-gray-500 rounded-lg right-0 overflow-hidden">
-      <p class="px-2 cursor-pointer py-1 font-medium  hover:bg-blue-600 w-auto">Главная</p>
-      <p class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 ">Партнеры</p>
-      <p class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 whitespace-nowrap">
-        О нас 
-      </p> 
-      <p @click="$router.push({name:'contacts'})" class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600  ">Контакты</p>
+      <button class="px-2 cursor-pointer py-1 font-medium  hover:bg-blue-600 w-auto">
+        <router-link to="/home"> 
+          Главная
+        </router-link>
+        </button>
+      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 ">
+        <router-link to="/partners"> 
+          Партнеры
+        </router-link>
+        </button>
+      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 whitespace-nowrap">
+        <router-link to="/about"> 
+          О нас
+        </router-link>
+      </button> 
+      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600">
+        <router-link to="/contacts"> 
+          Контакты
+        </router-link>
+        </button>
     </div>
     <div
-      class="sm:flex  text-lg md:text-lg text-blue-600 hidden "
+      class="sm:flex  text-lg md:text-lg text-blue-600 hover hidden "
     >
-      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">Главная</button>
-      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">Партнеры</button>
-      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md whitespace-nowrap">
-        О нас
+      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">
+        <router-link to="/home"> 
+          Главная
+        </router-link>
       </button>
-      <button  class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">Контакты</button>
-      <router-view></router-view>
+      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">
+        <router-link to="/partners"> 
+          Партнеры
+        </router-link>
+      </button>
+      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md whitespace-nowrap">
+        <router-link to="/about"> 
+          О нас
+        </router-link>
+      </button>
+      <button  class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">
+           <router-link to="/contacts"> 
+        Контакты
+          </router-link>
+        </button>
+      
     </div>
   </div>
 </template>

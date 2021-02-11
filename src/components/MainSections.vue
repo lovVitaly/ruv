@@ -1,9 +1,9 @@
 <template>
-  <div id="sections" class="md:flex md:justify-center md:space-x-5 ">
+  <div id="sections" class="md:flex md:justify-center md:space-x-5 md:space-x-20 ">
       <div v-for="section in sections" :key="section.index" class="container  "> 
-          <p class="text-xl sm:text-3xl text-center text-gray-700 font-black pb-3 whitespace-nowrap">{{section.name}}</p>
-          <img :src="require(`/public/img/sections/${section.img}.jpg`)" alt="" class=" md:h-32 lg:h-52 w-1/2 md:w-full mx-auto md:mx-0">
-          <p class="text-gray-500 text-base md:text-lg">{{section.content}}</p>
+        <h1 class="text-xl sm:text-2xl text-center text-gray-700 font-black pb-3 whitespace-nowrap">{{section.name}}</h1>
+        <img :src="require(`/public/img/sections/${section.img}.jpg`)" alt="" class=" md:h-40 lg:h-64 w-1/2 md:w-full mx-auto md:mx-0">
+        <p class="text-gray-500 text-base md:text-base lg:text-lg">{{section.content}}</p>
       </div>
   </div>
 </template>
