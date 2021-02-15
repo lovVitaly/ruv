@@ -8,7 +8,7 @@ Vue.use(Router);
 let router = new Router({
     mode: 'history',
     routes: [{
-            path: '/home',
+            path: '/' ,
             name: 'home',
             component: Main,
             props: true,

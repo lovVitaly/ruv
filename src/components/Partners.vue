@@ -1,6 +1,6 @@
 <template>
   <div id="partners">
-    <h1 class="text-3xl my-3 text-center font-bold">
+    <h1 class="text-3xl py-3 text-center font-bold">
       Ниже представлена информация о наших основных европейских партнерах:
     </h1>
     <div v-for="partner in partners" :key="partner.index" class="containter py-3">

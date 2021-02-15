@@ -1,6 +1,6 @@
 <template>
   <div id="contacts" class="space-y-3 font-semibold min-h-screen">
-      <h1 class="text-4xl my-10">Контакты</h1>
+      <h1 class="text-4xl py-10">Контакты</h1>
       <p class="text-gray-700">По всем вопросам, связанным с работой нашей фирмы обращайтесь по ниже приведенным контактам:</p>
       <p><span class="text-gray-600">Телефон: </span> <a href="tel:+79295732073" class="text-blue-500 hover:text-blue-700 hover:underline">+7 (929) 573-20-73</a></p> 
       <p><span class="text-gray-600">Почта: </span> <a href="mailto:ruvenzori@list.ru" class="text-blue-500 hover:text-blue-700 hover:underline">ruvenzori@list.ru</a>, <a class="text-blue-500 hover:text-blue-700 hover:underline" href="mailto:m01@ryvenzori.ru">m01@ryvenzori.ru</a> </p> 

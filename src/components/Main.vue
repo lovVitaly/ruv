@@ -12,7 +12,7 @@
           class="  mx-auto rounded-md opacity-50"
         />
         <p
-          class="absolute top-1/3 text-gray-800 text-center font-bold  sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl "
+          class="absolute top-1/3 text-gray-900 text-center font-bold  sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl "
           :class="[width < 325 ? 'text-lg' : 'text-3xl']"
         >
           Поставка промышленного оборудования
