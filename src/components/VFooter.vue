@@ -1,7 +1,7 @@
 <template>
-  <div id="v-footer" class="bg-gray-50 py-5">
+  <div id="v-footer" class="bg-gray-50 py-3">
       <div class='px-10 md:px-24 lg:px-48'>
-      <p class="text-blue-500 text-2xl md:text-lg font-semibold ">{{currentYear}} © ООО "Рувензори"</p>
+      <p class="text-blue-500 lg:text-xl text-lg font-semibold ">{{currentYear}} © ООО "Рувензори"</p>
 
       </div>
 

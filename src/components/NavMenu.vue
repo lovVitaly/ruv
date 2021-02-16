@@ -3,7 +3,7 @@
     <button class="sm:hidden focus:outline-none" @click="isNavOpen = !isNavOpen" >
       <svg
         v-if="!isNavOpen"
-        class="w-6 fill-current text-blue-50 hover:text-blue-100"
+        class="w-6 fill-current text-blue-400 hover:text-blue-600"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
       >
@@ -26,47 +26,47 @@
       </svg>
     </button>
     <div v-if="isNavOpen"
-      class="sm:hidden text-lg text-blue-50 absolute z-10 bg-blue-500 border border-gray-500 rounded-lg right-0 overflow-hidden">
-      <button class="px-2 cursor-pointer py-1 font-medium  hover:bg-blue-600 w-auto">
+      class="sm:hidden text-lg text-blue-100 absolute z-10 bg-blue-400 border border-blue-50 rounded-lg right-0 overflow-hidden">
+      <button class="px-2 cursor-pointer py-1 font-medium  hover:bg-blue-600 w-full">
         <router-link to="/"> 
           Главная
         </router-link>
         </button>
-      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 ">
+      <button class="px-2   cursor-pointer py-1 font-medium hover:bg-blue-600 w-full">
         <router-link to="/partners"> 
           Партнеры
         </router-link>
         </button>
-      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 whitespace-nowrap">
+      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 whitespace-nowrap w-full">
         <router-link to="/about"> 
           О нас
         </router-link>
       </button> 
-      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600">
+      <button class="px-2 cursor-pointer py-1 font-medium hover:bg-blue-600 w-full">
         <router-link to="/contacts"> 
           Контакты
         </router-link>
         </button>
     </div>
     <div
-      class="sm:flex  text-lg md:text-xl text-blue-50 hover hidden "
+      class="sm:flex  text-lg md:text-xl text-blue-400 hidden "
     >
-      <button class="px-2 py-1 font-semibold hover:bg-blue-500 rounded-md">
+      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">
         <router-link to="/"> 
           Главная
         </router-link>
       </button>
-      <button class="px-2 py-1 font-semibold hover:bg-blue-500 rounded-md">
+      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">
         <router-link to="/partners"> 
           Партнеры
         </router-link>
       </button>
-      <button class="px-2 py-1 font-semibold hover:bg-blue-500 rounded-md whitespace-nowrap">
+      <button class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md whitespace-nowrap">
         <router-link to="/about"> 
           О нас
         </router-link>
       </button>
-      <button  class="px-2 py-1 font-semibold hover:bg-blue-500 rounded-md">
+      <button  class="px-2 py-1 font-semibold hover:bg-blue-200 rounded-md">
            <router-link to="/contacts"> 
         Контакты
           </router-link>

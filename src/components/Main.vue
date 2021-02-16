@@ -1,6 +1,8 @@
 <template>
   <div id="main" >
+    <p class="text-right pt-5 text-lg"><span class="text-gray-600">Для запросов: </span>  <a class="text-blue-700 hover:text-blue-900 hover:underline" href="mailto:m01@ryvenzori.ru">m01@ryvenzori.ru</a> </p>
     <div class="flex justify-center py-10">
+       
       <div class="relative">
         <img
           :src="
